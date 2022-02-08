@@ -404,13 +404,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝐀𝐌 Cɪɴᴇᴍᴀꜱ™ᴏꜰꜰɪᴄɪᴀʟ', url=f'https://t.me/adhologam_official')
         ], [
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('𝐀𝐌 ᴏᴛᴛ ᴜᴘᴅᴀᴛᴇꜱ™', url='https://t.me/OTTUPDATES_AD'),
+            InlineKeyboardButton('𝐀𝐌 ᴍᴏᴠɪᴇꜱ ɢʀᴏᴜᴘ™', url='https://t.me/adhologammovies_group')
         ], [
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('ℹ️ 𝐇ᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('𝐌ᴏʀᴇ 𝐆ʀᴏᴜᴘꜱ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -421,14 +421,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('Piracy Is Crime')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('𝐌ᴀɴᴜᴀʟ 𝐅ɪʟᴛᴇʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('𝐀ᴜᴛᴏ 𝐅ɪʟᴛᴇʀ', callback_data='autofilter')
         ], [
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('𝐂ᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct'),
+            InlineKeyboardButton('𝐄xᴛʀᴀ 𝐌ᴏᴅꜱ', callback_data='extra')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔮 Status', callback_data='stats')
+            InlineKeyboardButton('🏠 𝐇ᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🔮 𝐒ᴛᴀᴛᴜꜱ', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -438,11 +438,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria'),
-            InlineKeyboardButton('♥️ Source', callback_data='source')
+            InlineKeyboardButton('𝐀𝐌 ꜱᴇʀɪᴇꜱ ɢʀᴏᴜᴘ™', url='https://t.me/AdhologamSeries'),
+            InlineKeyboardButton('𝐀𝐌 ꜱᴇʀɪᴇꜱ ᴏꜰꜰɪᴄɪᴀʟ™', url='https://t.me/ADHOLOGAM_SERIES')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('🏠 𝐇ᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🔐 𝐂ʟᴏꜱᴇ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -764,7 +764,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("𝐈 𝐂𝐨𝐮𝐥𝐝𝐧'𝐭 𝐅𝐢𝐧𝐝 𝐀𝐧𝐲𝐭𝐡𝐢𝐧𝐠 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐓𝐨 𝐓𝐡𝐚𝐭. 𝐂𝐡𝐞𝐜𝐤 𝐘𝐨𝐮𝐫 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠...☹️\nനിങ്ങൾ ചോദിച്ച സിനിമ എനിക്ക് കണ്ടെത്താൻ കഴിഞ്ഞില്ല...😔 ഗൂഗിൾ സ്പെല്ലിങ് ശരിയാണോ എന്ന് നോക്കൂ...🤓")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -776,7 +776,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
+    await msg.reply("𝐈 𝐂𝐨𝐮𝐥𝐝𝐧'𝐭 𝐅𝐢𝐧𝐝 𝐀𝐧𝐲𝐭𝐡𝐢𝐧𝐠 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐓𝐨 𝐓𝐡𝐚𝐭 𝐃𝐢𝐝 𝐘𝐨𝐮 𝐌𝐞𝐚𝐧 𝐀𝐧𝐲 𝐎𝐧𝐞 𝐎𝐟 𝐓𝐡𝐞𝐬𝐞?\nനിങ്ങൾ ചോദിച്ച സിനിമ എനിക്ക് കണ്ടെത്താൻ കഴിഞ്ഞില്ല...😔താഴെ ഉള്ളതിൽ ഏതെങ്കിലും ആണോ എന്ന് നോക്കൂ...🤓 അതും അല്ലങ്കിൽ ഗൂഗിൾ സ്പെല്ലിങ് ശരിയാണോ എന്ന് നോക്കൂ...👍\n🔴ᴛʜɪꜱ ᴍᴏᴠɪᴇ ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ എന്നാണ് കാണിക്കുന്നത് എങ്കിൽ @admins എന്ന് ടൈപ്പ് ആക്കി അയക്കൂ...🔍",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
